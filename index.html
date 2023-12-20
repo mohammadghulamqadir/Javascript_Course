@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Course</title>
+    <script>
+      //   function getCityList() {
+      /*var html =
+            '<select><option value="select">Select City</option><option value="Lahore">Lahore</option><option value="Karachi">Karachi</option><option value="Mali">Mali</option><option value="Kashmir">Kashmir</option><option value="muree">muree</option></select>';
+        document.write(html);*/
+
+      //   function getDiscount(listprice, salePrice, div_class) {
+      //     var discount = Math.round(((listprice - salePrice) / listprice) * 100);
+      //     document.write(
+      //       "<div class='" + div_class + "'>" + discount + "% Discount</div>"
+      //     );
+      //   } //this is not parametrize function
+      //   getDiscount(200, 150, "div_price");
+      //   getDiscount(300, 150, "div_price1");
+
+      //   anonymous Function
+      //   (function () {
+      //     let x = 10;
+      //     let y = 20;
+      //     document.write(x * y);
+      //   })();
+      //   alert
+      //   confirm
+      //   prompt
+      //   alert("herllo");
+
+      //   let result = confirm("Are you Sure?");
+      //   if (result === true) {
+      //     //operation
+      //   }
+      //   document.write(result);
+
+      // for Entering the name in correct manner
+      /*let check = prompt("Enter your name");
+      if (
+        check == "" ||
+        check == null ||
+        check.length <= 3 ||
+        teypeof(check) == Number
+        ) {
+            document.write("Please Enter your Name");
+        } else {
+            document.write("Welcome Here, " + check);
+        }*/
+      // Summing the two numbers from prompt
+      //   let num1 = prompt("Enter Number 1:", 0);
+      //   let num2 = prompt("Enter Number 2:", 0);
+      //   if (num1 == "" || num1 == null || num2 == "" || num2 == null) {
+      //     document.write("Please Enter Number in correct Manners");
+      //   } else {
+      //     num1 = parseInt(num1);
+      //     num2 = parseInt(num2);
+      //     document.write("Sum:" + (num1 + num2));
+      //     // document.write(typeof num1);
+      //   }
+
+      //   string methods
+      /*
+        string.length//length of string
+        string.search //it provide the index number where elements starts
+        string.indexOf
+        string.lastIndexOf
+        string.slice(start, last_value)//it can take negative values(Choose characters form right to left) as well as positive(Choose characters form left to right)
+        string.substring
+        string.substr
+        string.substr(start_value, number_of_steps);
+        string.replace
+        string.toUpperCase()
+        string.toLowerCase()
+        string.trim()
+        string.concat(" ",string1)
+        */
+      //   let string = "Programming Vishal with Vishal";
+      //   let string = "Programming with Vishal";
+      //   document.write(string.search("Vishal"));// output: 12
+      //   document.write(string.indexOf("Vishal"));//output: 12
+      //   document.write(string.lastIndexOf("Vishal")); //output: 24
+      //   document.write(string.slice(start, last_value));
+      //   Programming with Vishal
+      //   0rogrammin11 13it16 Vishal
+      //   document.write(string.slice(12, 16)); //output: with
+      //   document.write(string.substr(12, 4)); //output: with
+      //   let replacestr = document.write(string.replace("Vishal", "Amit")); //output: Programming with Amit
+      //   document.write(string.toLowerCase());
+      //   document.write(string.toUpperCase());
+      //   document.write(string.trim());//remove the extra spaces in the string from start and last of the string
+      //   let string = "ViShAl gUpTa";
+      //   document.write("Welcome " + string.toUpperCase());
+      //   let html = "Dear %String%, Here is your Password";
+      //   let result = html.replace("%String%", "Amit");
+      //   document.write(result);
+    </script>
+  </head>
+  <body>
+    <!-- <div id="box"></div> -->
+    <!-- <script>
+      getCityList();
+    </script>
+    <script>
+      getCityList();
+    </script> -->
+    <script>
+      //   document.getElementById("box").innerHTML = "programming";
+      //   document.write("programming Qadir");
+      //   document.write("programming Qadir");
+      //   document.write("programming Qadir");
+      //   Preincrement and post increment
+      //      ++x, and x++
+      //
+      //   var x = 50;
+      //   var y = 60;
+      //   document.write(x + y); //output 1010 =>concatenation
+      //   var result = x > 60 ? "1st" : "Any";
+      //   document.write(result);
+      //   let result;
+      //   document.write(result ?? "Good");
+      //   If first(empty or false) return second statement
+      /*var listprice = 120;
+        var salePrice = 100;
+        var discount = Math.round(((listprice - salePrice) / listprice) * 100);
+        document.write(
+          "<div class='discount_price'>" + discount + "% Discount</div>"
+        );*/
+    </script>
+    <script src="day2.js"></script>
+  </body>
+</html>
+
+<!-- Filter Methid of array: -->
+
+<!--
+<!DOCTYPE html>
+
+<html>
+<body>
+
+<h1>JavaScript Arrays</h1>
+<h2>The filter() Method</h2>
+
+<p>Click "Test" to get every element in the array that has a value above this number:</p>
+
+<p><input type="number" id="ageToCheck" value="10"></p>
+<button onclick="myFunction()">Test</button>
+
+<p id="demo"></p>
+
+<script>
+const ages = [32, 33, 12, 40];
+ages.sort()
+function checkAge(age) {
+  return age > document.getElementById("ageToCheck").value;
+}
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = ages.filter(checkAge);
+}
+</script>
+
+</body>
+</html> -->
+
+<!-- Map Function -->
+
+<!-- <script>
+  const persons = [
+    { firstname: "Malcom", lastname: "Reynolds" },
+    { firstname: "Kaylee", lastname: "Frye" },
+    { firstname: "Jayne", lastname: "Cobb" },
+  ];
+
+  document.getElementById("demo").innerHTML = persons.map(getFullName);
+
+  function getFullName(item) {
+    return [item.firstname, item.lastname].join(" ");
+  }
+</script> -->
+
+<!-- function user(fn, ln){
+  this.fname = fn;
+  this.lname = ln;
+}
+user.prototype.age = 10;
+user.prototype.fullname = function() {
+  return this.fname+" "+ this.lname;
+}
+let obj1 = new user("GHULAM", "QADIR")
+let obj2 = new user("GHULAM", "QADIR")
+
+
+Prototype   
+
+If we want to assign the  the value of constructor function "user" then we can't assign the value directly as 
+obj1.age = 19;
+
+We can add this by using the prototype lilke below
+
+"user.prototype.age = 10;"
+
+By using "user.prototype.age" we have assigned age value on the both obj1 and obj2. If we want to add the value by using the constructor function then we use prototype.
+-->
+
+<!-- 
+  Finding the number max frequency of the word
+   
+  const sentences = [
+  "The quick brown fox jumps over the lazy dog.",
+  "A journey of a thousand miles begins with a single step.",
+  "All that glitters is not gold. All that wander are not lost.",
+  "The early bird catches the worm."
+];
+
+// Using reduce to find the most common word
+const wordFrequency = sentences.reduce(function(accumulator, sentence) {
+  const words = sentence.split(/\s+/); // Split sentence into words
+
+  // The regular expression /\s+/ ensures that consecutive whitespace characters (spaces, tabs, etc.) are treated as a single delimiter, preventing empty strings in the resulting array for consecutive spaces.
+  words.forEach(function(word) {
+    const lowercasedWord = word.toLowerCase();
+    accumulator[lowercasedWord] = (accumulator[lowercasedWord] || 0) + 1;
+  });
+  return accumulator;
+}, {});
+
+// Finding the most common word
+let mostCommonWord = "";
+let maxFrequency = 0;
+
+for (const word in wordFrequency) {
+  if (wordFrequency[word] > maxFrequency) {
+    mostCommonWord = word;
+    maxFrequency = wordFrequency[word];
+  }
+}
+
+document.write(`Most common word: "${mostCommonWord}" with a frequency of ${maxFrequency} times.`);
+
+// document.write(`Total cost of items: $${totalCost}`);
+</script>
+ -->

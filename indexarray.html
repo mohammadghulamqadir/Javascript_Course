@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+    <script>
+      /*
+      length
+      concat//combine an array
+      pop()//remove right element of the array
+      shift()// remove left element of the array
+      push()//add element in the last of the array
+      unshift()//add element in the start of the array
+      splice(posistion, length)
+      indexOf()//find index else return -1
+      Array.isArray//check array is true of false
+      split()//
+      join()
+      */
+      //   let arr = ["Dehli", "Agra", "Mumbai", "Patna", "Bihaar"];
+      //   let arr1 = ["Dehli", "Agra", "Mumbai", "Patna", "Bihaar"];
+      //   document.write(arr);
+      //   document.write(arr.length);
+      //   arr.length = 0;
+      //   document.write(arr.length);
+      //   let result = arr.concat(arr1);
+      //   document.write(result);
+      //   arr.pop();
+      //   document.write(arr);//Dehli,Agra,Mumbai,Patna
+      //   arr.shift();
+      //   document.write(arr); //Agra,Mumbai,Patna,Bihaar
+      //   arr.splice(1, 2);
+      //   document.write(arr); //Dehli,Patna,Bihaar
+      //   arr.splice(1, 1);
+      //   document.write(arr); //Dehli,Mumbai,Patna,Bihaar
+      //   let str = "My name is GHULAM QADIR";
+      //   let result = str.split(" ");
+      //   console.log(result); //returns array //  ['My', 'name', 'is', 'GHULAM', 'QADIR']
+      //   let str1 = ["My", "name", "is", "GHULAM", "QADIR"];
+      //   let result = str1.join(" ");
+      //   console.log(result);
+      //   document.write(result);//My name is GHULAM QADIR
+
+      //   let name = "GHULAM QADIR";
+      //   let nameSplit = name.split(" ");
+      //   document.write("welcome " + nameSplit[0]);
+
+      //   ForEach loop
+      let arr = ["Dehli", "Agra", "Mumbai", "Patna", "Bihaar"];
+
+      //   arr.forEach(function (val, key) {
+      //     document.write(val, key);
+      //     document.write("<br/>");
+      //   });
+
+      arr.forEach(arrFun);
+ 
+      function arrFun(val) {
+        document.write(val);
+        document.write("<br/>");
+      }
+      // new part
+
+      // Sort array for the multiple items
+
+      //   let arr = ["Dehli", "Agra", "Mumbai", "Patna", "Bihaar"];
+      //   arr.sort();
+      //   let html = "<select><option>Select City</option>";
+      //   for (let i = 0; i < arr.length; i++) {
+      //     html = html + "<option>" + arr[i] + "</option>";
+      //   }
+      //   html = html + "</select>";
+      //   document.write(html);
+    </script>
+  </head>
+  <body>
+    <!-- sort the its dropdown -->
+  </body>
+</html>
